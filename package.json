@@ -1,30 +1,31 @@
 {
-  "name": "supervisor-slack-notifier",
-  "version": "0.0.1",
-  "description": "Supervisord plugin that listens to events and sends Slack notification on process status change.",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "supervisord",
-    "slack",
-    "plugin",
-    "event"
-  ],
-  "author": "Wojciech Iskra",
-  "license": "ISC",
-  "dependencies": {
-    "@slack/client": "^2.0.4",
-    "ez-config": "^0.2.1",
-    "lodash.get": "^4.1.2",
-    "moment": "^2.13.0",
-    "supervisord-eventlistener": "~0.1.0"
-  },
-  "devDependencies": {
-    "eslint": "^2.7.0",
-    "eslint-config-vgno": "^6.0.0",
-    "mock-stdin": "^0.3.0"
-  }
+    "name": "supervisor-slack-notifier",
+    "version": "0.0.1",
+    "description": "Supervisord plugin that listens to events and sends Slack notification on process status change.",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "supervisord",
+        "slack",
+        "plugin",
+        "event"
+    ],
+    "author": "Wojciech Iskra",
+    "license": "ISC",
+    "engine": "node >= 4.0.0",
+    "dependencies": {
+        "@slack/client": "^2.0.4",
+        "ez-config": "^0.2.1",
+        "lodash.get": "^4.1.2",
+        "moment": "^2.13.0",
+        "supervisord-eventlistener": "~0.1.0"
+    },
+    "devDependencies": {
+        "eslint": "^2.7.0",
+        "eslint-config-vgno": "^6.0.0",
+        "mock-stdin": "^0.3.0"
+    }
 }
