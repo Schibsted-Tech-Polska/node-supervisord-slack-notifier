@@ -1,0 +1,49 @@
+{
+    "slack": {
+        "apiToken": "",
+        "channel": "",
+        "opts": {
+            "username": "Supervisord",
+            "icon_emoji": ":doge:"
+        }
+    },
+    "supervisord": {
+        "programs": {},
+        "events": {
+            "PROCESS_STATE_BACKOFF": {
+                "niceName": "backoff",
+                "color": "danger",
+                "emoji": ":fire:"
+            },
+            "PROCESS_STATE_FATAL": {
+                "niceName": "fatal",
+                "color": "danger",
+                "emoji": ":fire:"
+            },
+            "PROCESS_STATE_EXITED": {
+                "niceName": "exited",
+                "color": "danger",
+                "emoji": ":fire:"
+            },
+            "PROCESS_STATE_STOPPED": {
+                "niceName": "stopped",
+                "color": "warning",
+                "emoji": ":stop:"
+            },
+            "PROCESS_STATE_STARTING": {
+                "niceName": "starting",
+                "color": "good",
+                "emoji": ":+1:"
+            },
+            "PROCESS_STATE_RUNNING": {
+                "niceName": "running",
+                "color": "good",
+                "emoji": ":+1:"
+            },
+            "PROCESS_COMMUNICATION_STDOUT": {
+                "color": "good",
+                "emoji": ":+1:"
+            }
+        }
+    }
+}
